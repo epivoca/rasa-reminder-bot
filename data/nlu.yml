@@ -1,0 +1,93 @@
+version: "2.0"
+nlu:
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - good morning
+      - good evening
+      - hey there
+      - привет
+      - здравствуйте
+      - салют
+      - доброго времени суток
+
+  - intent: bye
+    examples: |
+      - bye
+      - good bye
+      - ciao
+      - see you
+      - see ya
+      - пока
+      - до связи
+      - счастливо
+      - досвидания
+      - увидимся
+      - удачи
+
+  - intent: ask_remind_call
+    examples: |
+      - remind me to call John
+      - remind me to call Lis
+      - remind me to call Albert
+      - remind me to call Susan
+      - later I have to call Alan
+      - later I have to call Jessie
+      - later I have to call Alex
+      - Please, remind me to call Vova
+      - please remind me to call Tanja
+      - I must not forget to call Santa
+      - I must not forget to call Daksh
+      - I must not forget to call Juste
+      - Напомни мне позвонить Джону
+      - Напомни мне позвонить Лизе
+      - Напомни мне позвонить Альберту
+      - Напомни мне позвонить Сьюзан
+      - Позже мне надо позвонить Алану
+      - Позже мне надо позвонить Джесси
+      - Позже мне надо позвонить Алексу
+      - Пожалуйста, напомни мне позвонить Вове
+      - Пожалуйста, напомни мне позвонить Тане
+      - Я должен не забыть позвонить Санте
+      - Я должен не забыть позвонить Жене
+      - Я должен не забыть позвонить Саше
+
+  - intent: ask_id
+    examples: |
+      - what's the conversation id?
+      - id
+      - What is the ID of this conversation?
+      - How do I send a POST request to this conversation?
+      - Какой айди диалога?
+      - айди
+      - Какой АЙДИ у данного диалога?
+      - Как мне отправить POST запрос к данному диалогу?
+
+  - intent: ask_forget_reminders
+    examples: |
+      - forget about it
+      - don't remind me!
+      - Forget about the reminder
+      - do not remind me
+      - cancel the reminder
+      - cancel all reminders please
+      - Forget reminding me
+      - Forget reminding me!
+      - забудь об этом
+      - не напоминай мне!
+      - Забудь об напоминании
+      - Отмени напоминание
+      - Отмени все напоминания, пожалуйста
+- intent: ask_remind_wash_windows
+  examples: |
+    - Напомни помыть окна
+    - Напомни помыть окна в [квартире](place_with_windows)
+    - Напомни помыть окна в [спальне](place_with_windows)
+    - Позже надо будет помыть окна
+    - Позже надо будет помыть окна в [доме](place_with_windows)
+    - Позже надо будет помыть окна на [кухне](place_with_windows)
+    - Надо не забыть помыть окна
+    - Надо не забыть помыть окна в [апартаментах](place_with_windows)
+    - Надо не забыть помыть окна в [гостиной](place_with_windows)
